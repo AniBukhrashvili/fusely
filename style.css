@@ -118,7 +118,7 @@ main .examination {
   gap: 180px;
 }
 
-.examination .text__container h2 {
+.text__container h2 {
   font-family: "Playfair Display";
   font-style: normal;
   font-weight: 700;
@@ -128,7 +128,7 @@ main .examination {
   color: #2f2e41;
 }
 
-.examination .text__container p {
+.text__container p {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
@@ -233,8 +233,10 @@ main .examination {
 /* contact section */
 
 .contact__banner {
+  justify-content: center;
   width: 900px;
   height: 296px;
+  margin: 220px auto 0;
   background: #2f2e41;
   border-radius: 2px;
 }
@@ -320,4 +322,114 @@ footer .bottom__details p {
   font-size: 14px;
   line-height: 16px;
   color: #9893a3;
+}
+
+.menu,
+.solutions,
+.team,
+.blog {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar,
+  .button__container {
+    display: none;
+  }
+  .menu {
+    display: block;
+    color: #6c63ff;
+    cursor: pointer;
+  }
+  .hero,
+  .cards__container {
+    flex-wrap: wrap;
+  }
+  .main .examination {
+    flex-wrap: wrap-reverse;
+    gap: 42px;
+  }
+  .hero,
+  .main {
+    margin-top: 16px;
+    padding: 20px 5%;
+  }
+  .text__container {
+    width: 100%;
+  }
+  .partners__container {
+    gap: 42px;
+  }
+  .main {
+    gap: 116px;
+    align-items: initial;
+  }
+  .solutions,
+  .team {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 42px;
+  }
+  .pricing__section,
+  .cards__container {
+    align-items: initial;
+  }
+  .cards__container .pricing__card,
+  .cards__container .pricing__maincard {
+    width: 100%;
+  }
+  .cards__container .pricing__maincard {
+    height: 421px;
+  }
+  .blog {
+    display: block;
+  }
+  .blog .text__container button {
+    width: auto;
+  }
+  .cards {
+    margin-top: 42px;
+  }
+  .blog__text {
+    margin-left: 8px;
+  }
+  .blog__text h2 {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: -1px;
+    color: #2f2e41;
+  }
+  .blog__text p {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #9893a3;
+  }
+  .contact__banner {
+    width: 100%;
+    margin-top: 108px;
+  }
+  .contact {
+    gap: 64px;
+  }
+  footer {
+    margin-top: 0px;
+    height: auto;
+  }
+  .footer__container {
+    flex-wrap: wrap;
+    margin-left: 36px;
+    gap: 72px;
+  }
+  footer .content {
+    margin-top: 64px;
+  }
+}
+
+@media screen and (max-width: 576px) {
 }

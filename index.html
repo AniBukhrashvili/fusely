@@ -12,7 +12,7 @@
 <body>
     <header class="container justify-between center-items">
         <img src="./assets/Logo.png" alt="logo" />
-        <nav>
+        <nav class="navbar">
             <ul class="container">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#features">Features</a></li>
@@ -25,6 +25,9 @@
             <button class="border__button">Log In</button>
             <button class="full__button">Get Started</button>
         </div>
+        <div class="menu">
+            <i class="fa-solid fa-bars fa-xl"></i>
+        </div>
     </header>
 
     <div class="hero container row justify-between mt-126 g-96 center-items" id="home">
@@ -33,10 +36,10 @@
             <p>Outcome-centered product that reduce churn, <br /> optimize pricing, and grow your subscription <br/> business end-to-end.</p>
             <button class="full__button">Get Started</button>
         </div>
-        <img src="./assets/Hero image.png" alt="hero-image" />
+        <img src="./assets/Hero image.png" alt="hero-image" class="container center-items" />
     </div>
 
-    <main class="container column mt-126 center-items">
+    <main class="main container column mt-126 center-items">
         <div class="partners__container container row justify-between g-96 center-items">
             <img src="./assets/binator logo.png" alt="binator-logo" />
             <img src="./assets/buyme logo.png" alt="buyme-logo" />
@@ -50,6 +53,24 @@
             <div class="text__container ">
                 <h2>Detailed Examination</h2>
                 <p>A daily dataset to keep you up to date on subscription market trends and what's happening in your vertical.</p>
+                <h3 class="learnmore__button">Learn More</h3>
+            </div>
+        </div>
+
+        <div class="solutions container row justify-between">
+            <img src="./assets/solutions.svg" alt="solutions-image" />
+            <div class="text__container">
+                <h2>Creative Solutions</h2>
+                <p>Creativity is our second name. We're full of inventive ideas and we're happy to present them to you.</p>
+                <h3 class="learnmore__button">Learn More</h3>
+            </div>
+        </div>
+
+        <div class="team container row justify-between">
+            <img src="./assets/team.svg" alt="team-image" />
+            <div class="text__container">
+                <h2>Professional Team</h2>
+                <p>Well, obviously, we're professionals. Don't hesitate - get to know us better.</p>
                 <h3 class="learnmore__button">Learn More</h3>
             </div>
         </div>
@@ -96,13 +117,48 @@
             </div>
         </div>
 
-        <div class="contact__banner" id="blog">
-            <div class="contact container justify-between center-items">
-                <h3>Interested in getting fusely? </h3>
-                <button class="full__button">Let's Talk</button>
+        <div class="blog container column">
+            <div class="text__container container row justify-between center-items">
+                <h2>From Our Blog</h2>
+                <button class="border__button">View All</button>
+            </div>
+            <div class="cards container column justify-between g-14 ">
+                <div class="blog__card container center-items">
+                    <img src="./assets/blog1.png" alt="blog-image" />
+                    <div class="blog__text container column g-14">
+                        <h2>What’s Fusely?</h2>
+                        <p>A brand new company, created for everyone. This article will help you understand what "fusely" stands for.</p>
+                        <h3 class="learnmore__button">Read More</h3>
+                    </div>
+                </div>
+
+                <div class="blog__card container center-items">
+                    <img src="./assets/blog2.png" alt="blog-image" />
+                    <div class="blog__text container column g-14">
+                        <h2>Introducing Fusely Engage</h2>
+                        <p>We’re happy to announce the Fusely Engage. The first growth automation platform designed for the digital interactions.</p>
+                        <h3 class="learnmore__button">Read More</h3>
+                    </div>
+                </div>
+
+                <div class="blog__card container center-items">
+                    <img src="./assets/blog3.png" alt="blog-image" />
+                    <div class="blog__text container column g-14">
+                        <h2>Premium vs Enterprise plan</h2>
+                        <p>Let’s compare our most popular plans: Premium and Enterprise. This article will help you decide which one will be better for your needs.</p>
+                        <h3 class="learnmore__button">Read More</h3>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
+
+    <div class="contact__banner container" id="blog">
+        <div class="contact container justify-between center-items">
+            <h3>Interested in getting fusely? </h3>
+            <button class="full__button">Let's Talk</button>
+        </div>
+    </div>
 
     <footer>
         <div class="footer__container container row center-items" id="contact">
@@ -150,6 +206,9 @@
             <p>© Fusely 2021. All rights reserved.</p>
         </div>
     </footer>
+
+    <script src="https://kit.fontawesome.com/a8dcba1fd1.js" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
